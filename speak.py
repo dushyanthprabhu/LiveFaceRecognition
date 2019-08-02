@@ -8,8 +8,7 @@ def tts(text):
     file = gTTS(text)#google text to speech converter
     filename='temp.mp3'#name given to file
 
-    # Saving the converted audio in a mp3 file named
-    # temp
+    # Saving the converted audio in mp3 format
     file.save(filename)
 
     music=pyglet.media.load(filename,streaming = False)#loading the audio file
